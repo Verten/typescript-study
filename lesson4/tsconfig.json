@@ -1,0 +1,10 @@
+{
+  "files": [
+    "src/index.ts",
+    "src/function.ts"
+  ],
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "target": "es5"
+  }
+}

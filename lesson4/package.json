@@ -1,0 +1,17 @@
+{
+  "name": "lesson4",
+  "version": "1.0.0",
+  "description": "study for typescript",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "verten",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-typescript": "^5.0.0-alpha.2",
+    "typescript": "^2.9.2"
+  }
+}
