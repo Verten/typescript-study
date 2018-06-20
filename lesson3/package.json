@@ -15,7 +15,10 @@
     "babel-preset-env": "^1.7.0",
     "babelify": "^8.0.0",
     "gulp-sourcemaps": "^2.6.4",
-    "vinyl-buffer": "^1.0.1"
+    "gulp-uglify": "^3.0.0",
+    "gulp-util": "^3.0.8",
+    "vinyl-buffer": "^1.0.1",
+    "watchify": "^3.11.0"
   },
   "scripts": {
     "start": "gulp",
