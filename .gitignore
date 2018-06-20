@@ -1,0 +1,62 @@
+# === Idea intelliJ ===
+**/.idea/
+**/*.iml
+*.ipr
+*.iws
+
+# === Maven ===
+**/target/
+
+# === Eclipse ===
+**/*.classpath
+**/*.project
+*.pydevproject
+.metadata
+bin/**
+tmp/**
+tmp/**/*
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+WEB-INF/server-config.wsdd
+
+# === Frontend ===
+iam-portal-frontend/node_modules/
+iam-portal-frontend/node/
+iam-portal-frontend/coverage/
+
+# === Log ===
+**/*.log
+
+# === Linux ===
+!.gitignore
+*~
+**/*.gz
+
+# === KDE ===
+.directory
+
+# === Folder config file ===
+Desktop.ini
+
+# CDT-specific
+.cproject
+
+# PDT-specific
+.buildpath
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# === Java ===
+*.class
+generated/
+
+**/node_modules/
+**/dist/
