@@ -16,7 +16,7 @@ import ComponentHome from './components/ComponentHome'
 //   },
 // ]
 
-const Routes: () => any = () => (
+const Routes: () => JSX.Element = () => (
   <div>
     <Switch>
       <Route exact={true} path="/" component={ComponentHome} />
