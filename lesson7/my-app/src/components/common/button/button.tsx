@@ -5,15 +5,24 @@ export interface IButtonProps {
   clickFunc: () => void
 }
 
-export interface IButtonState{
-  count: number
+export interface IButtonState {
+  disable: boolean
 }
 
 export default class Button extends React.Component<IButtonProps, IButtonState> {
+  constructor(props: IButtonProps) {
+    super(props)
+    this.state = {
+      disable: false,
+    }
+  }
+
   public render() {
     return (
       <div>
-        Button Component
+        <button id={this.props.name} onClick={this.props.clickFunc} disabled={this.state.disable}>
+          {this.props.name}
+        </button>
       </div>
     )
   }

@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { Route, Switch } from 'react-router-dom'
-import ButtonComponent from './components/common/button/button'
+import ButtonComponent from './components/common/button'
 import ComponentHome from './components/ComponentHome'
 // import { IProps } from './components/ComponentHome'
 
