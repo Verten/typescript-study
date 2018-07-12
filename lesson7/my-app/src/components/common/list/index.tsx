@@ -6,14 +6,13 @@ interface IListHomeProps {
 }
 
 export class ListHome extends React.Component<IListHomeProps, {}> {
-  static propTypes = {}
 
   constructor(props: IListHomeProps) {
     super(props)
     this.state = {}
   }
 
-  render() {
+  public render() {
     return (
       <div>
         <SimpleList data={['Tom', 'Lily', 'Leo', 'Jack', 'Bob']} />

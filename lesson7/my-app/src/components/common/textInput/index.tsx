@@ -10,8 +10,7 @@ interface ITextInputHomeState {
 }
 
 export class TextInputHome extends React.Component<ITextInputHomeProps, ITextInputHomeState> {
-  static propTypes = {}
-
+  
   constructor(props: ITextInputHomeProps) {
     super(props)
     this.state = {
@@ -20,19 +19,19 @@ export class TextInputHome extends React.Component<ITextInputHomeProps, ITextInp
     this.handleInputFunction = this.handleInputFunction.bind(this)
   }
 
-  handleInputFunction(event: React.ChangeEvent<HTMLInputElement>) {
-    this.setState({
-      value: event.target.value,
-    })
-  }
-
-  render() {
+  public render() {
     return (
       <div>
         <p>Input value is: {this.state.value}</p>
         <TextInput initValue={''} inputFunc={this.handleInputFunction} />
       </div>
     )
+  }
+
+  protected handleInputFunction(event: React.ChangeEvent<HTMLInputElement>) {
+    this.setState({
+      value: event.target.value,
+    })
   }
 }
 

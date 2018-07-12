@@ -1,27 +1,26 @@
 import * as React from 'react'
 
 interface IListProps {
-  data: Array<string>
+  data: string[],
 }
 
 export class SimpleList extends React.Component<IListProps, {}> {
-  static propTypes = {}
 
   constructor(props: IListProps) {
     super(props)
     this.state = {}
   }
 
-  renderDataList(data: Array<string>): JSX.Element {
-    const liContent: JSX.Element[] = []
-    data.map((_data, index) => {
-      liContent.push(<li key={index}>{_data}</li>)
-    })
-    return <ul>{liContent}</ul>
+  public render() {
+    return <div>{this.renderDataList(this.props.data)}</div>
   }
 
-  render() {
-    return <div>{this.renderDataList(this.props.data)}</div>
+  protected renderDataList(data: string[]): JSX.Element {
+    const liContent: JSX.Element[] = []
+    data.map((tmpData, index) => {
+      liContent.push(<li key={index}>{tmpData}</li>)
+    })
+    return <ul>{liContent}</ul>
   }
 }
 export default SimpleList
