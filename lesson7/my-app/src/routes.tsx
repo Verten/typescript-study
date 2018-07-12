@@ -1,7 +1,10 @@
 import * as React from 'react'
 import { Route, Switch } from 'react-router-dom'
-import ButtonComponent from './components/common/button'
+import ButtonHome from './components/common/button'
+import TextInputHome from './components/common/textInput'
+import ListHome from './components/common/list'
 import ComponentHome from './components/ComponentHome'
+import NotFoundPage from './components/page/NotFound'
 // import { IProps } from './components/ComponentHome'
 
 // const routes = [
@@ -17,12 +20,13 @@ import ComponentHome from './components/ComponentHome'
 // ]
 
 const Routes: () => JSX.Element = () => (
-  <div>
-    <Switch>
-      <Route exact={true} path="/" component={ComponentHome} />
-      <Route path="/button" component={ButtonComponent} />
-    </Switch>
-  </div>
+  <Switch>
+    <Route exact={true} path="/" component={ComponentHome} />
+    <Route path="/component/button" component={ButtonHome} />
+    <Route path="/component/text-input" component={TextInputHome} />
+    <Route path="/component/list" component={ListHome} />
+    <Route path="/*" component={NotFoundPage} />
+  </Switch>
 )
 
 export default Routes

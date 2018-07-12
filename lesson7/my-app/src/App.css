@@ -16,6 +16,16 @@
 .App-intro {
   font-size: large; }
 
+.App-component {
+  display: inline-block;
+  padding: 8px; }
+  .App-component li {
+    margin: 4px 0; }
+  .App-component:first-child {
+    width: 10%; }
+  .App-component:last-child {
+    width: 85%; }
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg); }

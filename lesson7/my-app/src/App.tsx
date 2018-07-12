@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { Link } from 'react-router-dom'
-import './App.css'
+import './App.scss'
 import logo from './logo.svg'
 import Routes from './routes'
 
@@ -18,12 +18,18 @@ class App extends React.Component<React.Props<{}>, {}> {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/button">Button</Link>
+              <Link to="/component/button">Button</Link>
+            </li>
+            <li>
+              <Link to="/component/text-input">Text Input</Link>
+            </li>
+            <li>
+              <Link to="/component/list">List</Link>
             </li>
           </ul>
         </div>
-        <div className="App-componen">
-          <Routes/>
+        <div className="App-component">
+          <Routes />
         </div>
       </div>
     )

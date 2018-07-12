@@ -25,7 +25,7 @@ let myIdentity: <T>(arg: T) => T = identity
 
 let myIdentity1: GenericsIdentity = identity
 
-let x = { a: 1, b: 2, c: 3, d: 4 }
+let x = { a: 1, b: 2, c: 3, d: 4, length: 4 }
 let mygenericsFunction: GenericsIdentityFunction<any, any> = getValue
 console.info(mygenericsFunction(x, 'd'))
 
@@ -33,6 +33,8 @@ function getLength<T extends LengthWise>(arg: T): T {
   console.info(arg.length)
   return arg
 }
+
+getLength(x)
 
 type Nullable<T> = { [P in keyof T]: T[P] | null }
 function getNull(arg: Nullable<LengthWise>) {
