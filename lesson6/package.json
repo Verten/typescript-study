@@ -4,7 +4,7 @@
   "description": "study for typescript",
   "main": "src/server.ts",
   "scripts": {
-    "compile":"tsc",
+    "compile": "tsc",
     "build": "webpack --config webpack.dev.conf.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
