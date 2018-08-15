@@ -15,7 +15,7 @@ export class ListHome extends React.Component<IListHomeProps, {}> {
   public render() {
     return (
       <div>
-        <SimpleList data={['Tom', 'Lily', 'Leo', 'Jack', 'Bob']} />
+        <SimpleList data={['Tom', 'Lily', 'Leo', 'Jack', 'Bob', 'Bin']} />
       </div>
     )
   }

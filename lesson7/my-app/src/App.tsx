@@ -26,6 +26,9 @@ class App extends React.Component<React.Props<{}>, {}> {
             <li>
               <Link to="/component/list">List</Link>
             </li>
+            <li>
+              <Link to="/component/select">Select</Link>
+            </li>
           </ul>
         </div>
         <div className="App-component">
