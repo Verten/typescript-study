@@ -1,4 +1,4 @@
-const path = require('path');
+const path = require('path')
 const webpack = require('webpack')
 const BaseConfig = require('./webpack.conf')
 
@@ -19,6 +19,17 @@ DevConfig.devServer = {
   compress: true,
   historyApiFallback: true,
   contentBase: [path.join(__dirname, 'public')],
+  proxy: {
+    '/weapi': {
+      target: 'http://music.163.com/weapi',
+      changeOrigin: true,
+      onProxyReq: proxyReq => {
+        if (proxyReq.getHeader('origin')) {
+          proxyReq.setHeader('origin', 'http://music.163.com/weapi')
+        }
+      },
+    },
+  },
 }
 
 DevConfig.mode = 'development'
