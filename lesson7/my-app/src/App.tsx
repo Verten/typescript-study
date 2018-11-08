@@ -2,7 +2,19 @@ import * as React from 'react'
 import { Link } from 'react-router-dom'
 import './App.scss'
 import logo from './logo.svg'
+import Menu from './components/menu/menu'
 import Routes from './routes'
+
+const menu = [
+  {
+    name: 'Home',
+    path: '/',
+  },
+  {
+    name: 'Button',
+    path: '/button',
+  },
+]
 
 class App extends React.Component<React.Props<{}>, {}> {
   public render() {

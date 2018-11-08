@@ -21,24 +21,28 @@
   font-size: large;
 }
 
-.App-component{
+.App-component {
   display: inline-block;
   padding: 8px;
-  ul{
+  ul {
     list-style-type: none;
   }
-  li{
+  li {
     margin: 4px 0;
   }
-  &:first-child{
+  &:first-child {
     width: 10%;
   }
-  &:last-child{
+  &:last-child {
     width: 85%;
   }
 }
 
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
